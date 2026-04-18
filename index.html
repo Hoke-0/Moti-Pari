@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Moti-Pari</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Special Elite', monospace;
+            background: linear-gradient(135deg, #cfe9ff, #e6d6ff);
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+
+            background:
+                repeating-linear-gradient(45deg,
+                    rgba(255, 255, 255, 0.18) 0px,
+                    rgba(255, 255, 255, 0.18) 1px,
+                    transparent 1px,
+                    transparent 8px),
+                repeating-linear-gradient(-45deg,
+                    rgba(120, 90, 150, 0.12) 0px,
+                    rgba(120, 90, 150, 0.12) 1px,
+                    transparent 1px,
+                    transparent 10px),
+                radial-gradient(circle at 100% 0%,
+                    rgba(255, 255, 255, 0.22),
+                    transparent 45%),
+                radial-gradient(circle at 85% 25%,
+                    rgba(120, 90, 150, 0.12),
+                    transparent 55%);
+
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container,
+        .letter {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* SHOW EVERYWHERE */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .letter {
+            width: 750px;
+            max-width: 90%;
+            height: 1060px;
+            padding: 40px 30px;
+
+            background:
+                repeating-linear-gradient(to bottom,
+                    rgba(120, 100, 70, 0.08) 0px,
+                    rgba(120, 100, 70, 0.08) 1px,
+                    transparent 1px,
+                    transparent 30px),
+                #fdf6e3;
+
+            border-radius: 6px;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.3),
+                inset 0 0 25px rgba(120, 90, 50, 0.15);
+
+            display: flex;
+            flex-direction: column;
+
+            transform: rotate(-0.3deg);
+            position: relative;
+        }
+
+        .letter h1 {
+            text-align: center;
+            font-size: 64px;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+
+        .message {
+            flex: 1;
+            overflow-y: auto;
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .message::-webkit-scrollbar {
+            display: none;
+        }
+
+        .message p {
+            font-size: 35px;
+            line-height: 47px;
+            margin: 0;
+            color: #2b2620;
+        }
+
+        .sunflower {
+            position: absolute;
+            bottom: -80px;
+            right: -67px;
+            width: 205px;
+            opacity: 0.9;
+            pointer-events: none;
+            transform: rotate(10deg);
+        }
+
+        .top-left-img {
+            position: absolute;
+            top: -63px;
+            left: -54px;
+            width: 19vh;
+            opacity: 0.9;
+            pointer-events: none;
+            transform: rotate(12deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="letter">
+            <h1>Moti Pari</h1>
+
+           <div class="message">
+    <p style="white-space: pre-line;">
+pyari pari,
+Happy Birthday! My fellow, my param mahila mitr, I hope I was there by holding a gift for you on your special day, par afoos ye possible nhi hai abhi, par ek din hum jur milenge aur vo jo bhi date hogi, hum usse bhul kr apke jaanam din celebrate krenge.
+
+apko pta hai, ye likhte waqt bhi mere chehre par jo smile hai, kbhi socha bhi nhi tha ek random si question se baat start hokr yetni dur aa jayegi aur mai kisi ka param purush mitr ban jaunga.
+
+Dead people receive more flowers than the living ones, because regret is stronger than gratitude. - Anne Frank
+
+aise logo ko andaza bhi nhi hai, I have my Moti Pari. ye phool ki baat krte hai, mera bas chale toh mai har din bagan le aau apki dehliz pe.
+
+mere life me bahut kam lucky log hai jinko mere pyare haath aur pyare hato se phool naseeb hota hai, and you're the luckiest one.
+
+Thanks for lifting me up in my lows, for listening to me, for empathizing with me, and for giving me comfort so I can tell you everything without the fear of judgment. Thank you for always replying so quickly and for being my param mahila mitr.
+
+Your param purush mitr wants to hold a bunch of sunflowers for you when we meet. He wants to see you happy, but in that moment, I’ll be even happier, because I’ll finally get to see a real fairy in this doggies world.
+
+jiski kahani chote se sunta aa raha hu, ab finally usse dekh pa raha hu. ye soch kar ke hi mai itna khush ho raha hu, aap andaza nhi laga payenge. aap dekhenge mujhko aur aap bhi muskurayenge.
+
+kehne ko toh itna hai ki shabd khatam ho jayenge, par aapki tareef nhi, par filhal ke liye itna hi rehne dete hai, my Moti Pari.
+
+stay the same,
+thodi si crazy, thodi si soft, thodi si strong, aur mere liye hamesha meri Moti Pari rehna.
+once again, happy birthday!
+
+tumhara,
+param purush mitr
+(Anaconda/Supari/Harsh ji)
+    </p>
+</div>
+
+            <img src="sunflower.png" class="sunflower">
+            <img src="cat.png" class="top-left-img">
+        </div>
+    </div>
+
+</body>
+
+</html>
